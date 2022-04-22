@@ -27,6 +27,13 @@ public class Festmeny extends KiallitasTargy implements Comparable<Festmeny>{
         super(targy, keszitoje);
         this(elerisiutvonal);
     }
+     public Festmeny(String targy, String keszitoje, String dátum) {
+        
+        this(targy, keszitoje, "",dátum);
+    }
+    public Festmeny(String targy, String keszitoje) {
+        super(targy, keszitoje);
+   }
 
     public String getElérisiutvonal() {
         return elérisiutvonal;
